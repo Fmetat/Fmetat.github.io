@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[nodejs安装]]></title>
+    <url>%2F2019%2F05%2F04%2Fnodejs%2Fnodejs%E5%AE%89%E8%A3%85%2F</url>
+    <content type="text"><![CDATA[window系统nodejs环境配置下载安装nodejs 下载：http://nodejs.cn/download/ 版本类型：10.15.3.msi，可更换安装的目录 执行命令报错Error: EEXIST: file already exists, mkdir ‘E:\hy\01_env\Nodejs\npm’ 原因文件C:\Users\HY.npmrc 中安装程序包的存储目录和缓存目录npm文件名冲突，只需修改路径即可12prefix=E:\hy\01_env\Nodejs\npm\node_modulescache=E:\hy\01_env\Nodejs\npm\node_cache 解决方法修改文件C:\Users\HY.npmrc 中安装程序包的存储目录和缓存目录12prefix=E:\hy\01_env\Nodejs\node_global_modulescache=E:\hy\01_env\Nodejs\node_cache 检查环境变量有些同学安装第三方包后，依然找不到执行命令，这时需要检查一下环节变量prefix的路径是否正确 12345新增NODE_HOME系统变量名，然后再配置prefix和cache的位置NODE_HOME=E:\hy\01_env\Nodejspath中新增%NODE_HOME%\node_global_modules%NODE_HOME%\node_cache 更改阿里npm镜像地址 地址：http://npm.taobao.org/ 按照地址中的方法配置即可]]></content>
+      <categories>
+        <category>nodejs</category>
+      </categories>
+      <tags>
+        <tag>nodejs</tag>
+      </tags>
+  </entry>
+</search>
